@@ -1,4 +1,125 @@
 body {
-  background-color: #dadada;
-  font-size: 10px;
+  background-color:#E0E0E0;
+  /*centers the body*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*for Modern luxury travel text*/
+
+.container{
+  width: 100%;
+
+  /*centers the image*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
+}
+
+.container h1{
+  font-family: sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 28px;
+}
+
+.preview {
+width: 100%; /*width of your image*/
+height: 300px; /*height of your image*/
+
+background-size: cover;
+background-position:absolute;
+
+/*centers the image*/
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+/*gives margin between images*/
+margin-bottom: 20px;
+
+float: left;
+}
+
+.preview h2{
+  position: relative;
+  left: 40px;
+  top: 40px;
+  font-size: 19px;
+  font-family: "Times New Roman";
+}
+
+.baku {
+   background-image: url('../images/baku.jpg');
+}
+
+.london {
+  background-image: url('../images/london.png');
+}
+
+.madrid{
+  background-image: url('../images/madrid.jpg');
+}
+
+.rome{
+  background-image: url('../images/rome.jpg');
+}
+
+  /*media queries
+Tablets	(min-width: 575px)
+Laptops	(min-width: 991px)
+Desktops	(min-width: 1199px)
+*/
+
+  /*media queries for small phones/screens. one column. */
+@media only screen and (max-width: 575px) {
+
+}
+
+/*media queries for tablets. two columns.*/
+@media only screen and (min-width: 575px) and (max-width: 991px){
+  .preview {
+    margin: 1%;
+    width: 48%;
+    background-size: center;
+    background-position:relative;
+    height: 200px;
+  }
+
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+  }
+  .preview h2{
+    position: relative;
+    left: 24px;
+    top: 24px;
+    font-size: 18px;
+  }
+
+}
+
+/*media queries for laptops. three columns.*/
+@media only screen and (min-width: 991px){
+
+  .preview {
+    margin: 1%;
+    width: 23%;
+    background-size: center;
+    background-position:relative;
+    height: 200px;
+  }
+
+  .container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: auto;
+  }
 }
